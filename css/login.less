@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+    );
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    i{
+      margin-right:10px;
+      color:#aaa;
+    }
+    .logo {
+      width: 200px;
+      margin: 0 auto 30px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .username,.password,.btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      border:1px solid #aaa;
+      border-radius: 50px;
+      padding: 10px;
+      margin:0 auto;
+      margin-bottom:20px;
+      label{
+        margin-right:10px;
+        color:#333;
+      }
+    }
+    @media screen and(max-width:768px){
+      .username,.password{
+        flex-direction: column;
+        border:none;
+      }
+      .username input,.password input{
+        border:1px solid #aaa;
+        border-radius: 50px;
+        padding:5px 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .user-title,.password-title{
+        margin-bottom:10px;
+      }
+      .error-style{
+        border:none;
+        input{
+          border:1px solid #ed4264;
+        }
+      }
+      
+    }
+    input{
+      border:none;
+      outline:none;
+      padding: 5px;
+      
+    }
+    //錯誤訊息的樣式
+    
+    .errorMsg{
+      font-size: 10px;
+      color:#ed4264;
+    }
+   
+    // 錯誤時紅色框
+    @media screen and(min-width:769px){
+    .error-style{
+      border:1px solid #ed4264;
+    }
+  }
+    .btn{
+      background: linear-gradient(to right, #dae2f8, #d6a4a4);
+      input[type="submit"]{
+        color:#fff;
+        background-color:transparent;
+        // 更改input中的文字尺寸
+        font-size: 18px;
+      }
+      border:none;
+      margin-top:25px;
+    }
+    
+    
+  }
+  
+}
+

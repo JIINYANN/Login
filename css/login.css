@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFlOG829Oofr2wohFbTp9i9WyEJ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9kwMvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9ywIvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9gwQvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosanstc/v24/-nFkOG829Oofr2wohFbTp9i9uwYvDQ.otf) format('opentype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.wrap .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+.wrap .container i {
+  margin-right: 10px;
+  color: #aaa;
+}
+.wrap .container .logo {
+  width: 200px;
+  margin: 0 auto 30px;
+}
+.wrap .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .container .username,
+.wrap .container .password,
+.wrap .container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border: 1px solid #aaa;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.wrap .container .username label,
+.wrap .container .password label,
+.wrap .container .btn label {
+  margin-right: 10px;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .wrap .container .username,
+  .wrap .container .password {
+    flex-direction: column;
+    border: none;
+  }
+  .wrap .container .username input,
+  .wrap .container .password input {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .wrap .container .user-title,
+  .wrap .container .password-title {
+    margin-bottom: 10px;
+  }
+  .wrap .container .error-style {
+    border: none;
+  }
+  .wrap .container .error-style input {
+    border: 1px solid #ed4264;
+  }
+}
+.wrap .container input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.wrap .container .errorMsg {
+  font-size: 10px;
+  color: #ed4264;
+}
+@media screen and (min-width: 769px) {
+  .wrap .container .error-style {
+    border: 1px solid #ed4264;
+  }
+}
+.wrap .container .btn {
+  background: linear-gradient(to right, #dae2f8, #d6a4a4);
+  border: none;
+  margin-top: 25px;
+}
+.wrap .container .btn input[type="submit"] {
+  color: #fff;
+  background-color: transparent;
+  font-size: 18px;
+}
+/*# sourceMappingURL=./login.css.map */

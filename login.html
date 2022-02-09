@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <script src="https://use.fontawesome.com/7908478e60.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/login.js"></script>
+  <title>Login</title>
+</head>
+<body>
+  <div class="wrap"> 
+    <div class="container">
+      <div class="logo">
+        <img src="./imgs/j_letter_icon.svg" alt="logo">
+      </div>
+      <div class="username" id="username">
+        <div class="user-title">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+          <label for="user-id">Username</label>
+        </div>
+        <input type="text" name="" id="user-id" autocomplete="off">
+      </div>
+      <div class="password" id="password">
+        <div class="password-title">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <label for="user-password">Password</label>
+        </div>
+        <input type="password" name="" id="user-password">
+      </div>
+      <span class="errorMsg"></span>
+      <div class="btn">
+        <input type="submit" value="Login" id="btn">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
