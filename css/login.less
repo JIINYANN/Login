@@ -6,6 +6,16 @@
   list-style: none;
   font-family: 'Noto Sans TC', sans-serif;
 }
+a{
+  text-decoration: none;
+  span{
+    color:#999;
+    font-weight: 300;
+  }
+}
+a:hover span{
+  color:#ed4264;
+}
 
 .wrap{
   width: 100%;
@@ -20,7 +30,7 @@
     height: 600px;
     margin: auto;
     i{
-      margin-right:10px;
+      margin-right:5px;
       color:#aaa;
     }
     .logo {
@@ -35,6 +45,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
       width: 60%;
       border:1px solid #aaa;
       border-radius: 50px;
@@ -44,6 +55,9 @@
       label{
         margin-right:10px;
         color:#333;
+      }
+      input{
+        flex-grow:1;
       }
     }
     @media screen and(max-width:768px){
@@ -60,6 +74,9 @@
       }
       .user-title,.password-title{
         margin-bottom:10px;
+      }
+      .password a{
+        margin:5px 0;
       }
       .error-style{
         border:none;

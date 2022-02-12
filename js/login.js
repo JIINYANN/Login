@@ -7,19 +7,27 @@ $(function(){
     //2.創建正規表達式對象
     let usernamePatt = /^\w{5,12}$/;
     //3.使用test方法驗證--僅判斷不符合條件的時候提示用戶結果
-    if(!usernamePatt.test($usernameText)){
+    if($usernameText == ""){
+      $(".errorMsg").text("username cannot be empty!");
+      $("#username").addClass("error-style");
+      return false;
+    }else if(!usernamePatt.test($usernameText)){
       //4.提示用戶結果
-      $(".errorMsg").text("Sorry，we couldn't find an account with that username.");
+      $(".errorMsg").text("Sorry , we couldn't find an account with that username.");
       $("#username").addClass("error-style");
       return false;
     }
-    //驗證密碼 : 必須由字母、數字下滑線組成，並且長度為5-12位
+    //驗證密碼 : 必須由字母、數字下滑線組成，並且長度為8-12位
     //1.獲取用密碼輸入框里的內容
     let $passwordText = $("#user-password").val();
     //2.創建正規表達式對象
     let passwordPatt = /^\w{8,12}$/;
     //3.使用test方法驗證--僅判斷不符合條件的時候提示用戶結果
-    if(!passwordPatt.test($passwordText)){
+    if($passwordText == ""){
+      $(".errorMsg").text("password cannot be empty!");
+      $("#password").addClass("error-style");
+      return false;
+    }else if(!passwordPatt.test($passwordText)){
       //4.提示用戶結果
       $(".errorMsg").text("Your password is incorrect.")
       $("#password").addClass("error-style");

@@ -39,6 +39,16 @@
   list-style: none;
   font-family: 'Noto Sans TC', sans-serif;
 }
+a {
+  text-decoration: none;
+}
+a span {
+  color: #999;
+  font-weight: 300;
+}
+a:hover span {
+  color: #ed4264;
+}
 .wrap {
   width: 100%;
   height: 100vh;
@@ -54,7 +64,7 @@
   margin: auto;
 }
 .wrap .container i {
-  margin-right: 10px;
+  margin-right: 5px;
   color: #aaa;
 }
 .wrap .container .logo {
@@ -84,6 +94,11 @@
   margin-right: 10px;
   color: #333;
 }
+.wrap .container .username input,
+.wrap .container .password input,
+.wrap .container .btn input {
+  flex-grow: 1;
+}
 @media screen and (max-width: 768px) {
   .wrap .container .username,
   .wrap .container .password {
@@ -101,6 +116,9 @@
   .wrap .container .user-title,
   .wrap .container .password-title {
     margin-bottom: 10px;
+  }
+  .wrap .container .password a {
+    margin: 5px 0;
   }
   .wrap .container .error-style {
     border: none;
